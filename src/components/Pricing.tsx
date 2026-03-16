@@ -41,7 +41,7 @@ const workSteps = [
 
 export const Pricing = () => {
     return (
-        <section id="pricing" className="py-24 px-4 bg-black text-white">
+        <section id="pricing" className="py-16 sm:py-24 px-4 bg-black text-white">
             <div className="max-w-7xl mx-auto">
                 <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
                     <div>
@@ -64,11 +64,11 @@ export const Pricing = () => {
                             transition={{ delay: index * 0.2 }}
                             className="border-2 border-white p-8 flex flex-col hover:bg-white hover:text-black transition-colors group"
                         >
-                            <h3 className="text-3xl mb-4">{plan.title}</h3>
+                            <h3 className="text-2xl mb-4">{plan.title}</h3>
                             <div className="mb-6">
                                 <div className="text-4xl font-black mb-1">{plan.price}</div>
                             </div>
-                            <p className="mb-8 font-bold text-sm min-h-[48px]">{plan.description}</p>
+                            <p className="mb-8 font-bold text-sm min-h-12">{plan.description}</p>
 
                             <div className="mt-auto">
                                 <div className="text-xs font-black uppercase mb-4 border-b border-current pb-2">

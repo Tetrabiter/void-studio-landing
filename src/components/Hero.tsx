@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 export const Hero = () => {
     return (
-        <section className="min-h-screen flex flex-col justify-center px-4 pt-20">
+        <section className="min-h-screen flex flex-col justify-center px-4 pt-10 sm:pt-20">
             <div className="max-w-7xl mx-auto w-full">
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
@@ -14,7 +14,7 @@ export const Hero = () => {
                     <div className="mb-6 inline-block bg-black text-white px-3 py-1 text-xs font-bold uppercase tracking-widest">
                         Веб-студия / Дизайн будущего
                     </div>
-                    <h1 className="text-6xl md:text-8xl lg:text-9xl mb-8 leading-[0.9]">
+                    <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl mb-8 leading-[0.9]">
                         СОЗДАЕМ <br />
                         <span className="bg-black text-white px-2">БЕЗУПРЕЧНЫЙ</span> <br />
                         ЦИФРОВОЙ ОПЫТ
@@ -26,8 +26,8 @@ export const Hero = () => {
                         <a href="#contact" className="brutal-btn flex items-center gap-2 text-xl py-4 px-8">
                             Начать проект <ArrowRight className="w-6 h-6" />
                         </a>
-                        <a href="#services" className="px-8 py-4 uppercase font-bold text-xl hover:bg-black hover:text-white transition-colors brutal-border">
-                            Услуги
+                       <a href="#projects" className="brutal-btn flex items-center gap-2 text-xl py-4 px-8">
+                            Проекты <ArrowRight className="w-6 h-6" />
                         </a>
                     </div>
                 </motion.div>

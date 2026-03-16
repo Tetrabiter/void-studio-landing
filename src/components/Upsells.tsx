@@ -34,10 +34,10 @@ const upsells = [
 
 export const Upsells = () => {
     return (
-        <section id="upsells" className="py-24 px-4 bg-white">
+        <section id="upsells" className="py-16 sm:py-24 px-4 bg-white">
             <div className="max-w-7xl mx-auto">
                 <div className="mb-16">
-                    <h2 className="text-5xl md:text-7xl mb-4 uppercase">Дополнительные услуги</h2>
+                    <h2 className="text-4xl sm:text-5xl md:text-7xl mb-4 uppercase">Дополнительные услуги</h2>
                     <p className="font-bold uppercase tracking-widest text-sm text-gray-500">Инструменты привлечения и автоматизация бизнеса.</p>
                 </div>
 
@@ -49,7 +49,7 @@ export const Upsells = () => {
                             whileInView={{ opacity: 1 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="border-2 border-black -ml-[2px] -mt-[2px] p-8 flex flex-col gap-4 group hover:bg-black hover:text-white transition-all cursor-default"
+                            className="border-2 border-black -ml-0.5 -mt-0.5 p-8 flex flex-col gap-4 group hover:bg-black hover:text-white transition-all cursor-default"
                         >
                             <div className="flex items-center justify-between mb-2">
                                 <item.icon className="w-8 h-8" />

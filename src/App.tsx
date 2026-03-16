@@ -7,7 +7,7 @@ import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <div className="selection:bg-black selection:text-white">
+    <div className="overflow-x-hidden selection:bg-black selection:text-white">
       <Header />
       <main>
         <Hero />
