@@ -1,42 +1,34 @@
 import { motion } from "framer-motion";
-import { TrendingUp, BarChart3, Settings, ShieldCheck, Zap, MessageSquare } from "lucide-react";
+import { TrendingUp, BarChart3, Settings, MessageSquare } from "lucide-react";
 
 const upsells = [
     {
-        title: "SEO-аудит & Оптимизация",
-        price: "50 000 ₸",
+        title: "SEO-аудит и базовая оптимизация",
+        price: "20 000 ₽",
         icon: TrendingUp,
-        description: "Базовая оптимизация для видимости в поисковиках."
-    },
-    {
-        title: "Контекстная реклама",
-        price: "80 000 ₸",
-        icon: BarChart3,
-        description: "Настройка Яндекс.Директ / Google Ads на 1 месяц."
+        category: "Инструменты привлечения",
+        description: "SEO-аудит и базовая оптимизация для вашего проекта."
     },
     {
         title: "Сквозная аналитика",
-        price: "40 000 ₸",
-        icon: Zap,
-        description: "Подключение Метрики, GA и коллтрекинга."
+        price: "20 000 ₽",
+        icon: BarChart3,
+        category: "Инструменты привлечения",
+        description: "Подключение сквозной аналитики и отслеживание эффективности."
     },
     {
-        title: "Внедрение CRM",
-        price: "от 100 000 ₸",
+        title: "Подключение CRM",
+        price: "от 25 000 ₽",
         icon: Settings,
-        description: "AmoCRM, Bitrix24 и настройка воронки продаж."
+        category: "Автоматизация бизнеса",
+        description: "AmoCRM / Bitrix24 (настройка отправки лидов и базовых форм)."
     },
     {
-        title: "Телефония & Почта",
-        price: "30 000 ₸",
-        icon: ShieldCheck,
-        description: "Интеграция с корпоративными сервисами связи."
-    },
-    {
-        title: "Чат-боты",
-        price: "60 000 ₸",
+        title: "Чат-бот на сайт",
+        price: "15 000 ₽",
         icon: MessageSquare,
-        description: "Smart-боты в Telegram и WhatsApp для лидов."
+        category: "Автоматизация бизнеса",
+        description: "Установка виджета для Telegram / WhatsApp."
     }
 ];
 
@@ -45,11 +37,11 @@ export const Upsells = () => {
         <section id="upsells" className="py-24 px-4 bg-white">
             <div className="max-w-7xl mx-auto">
                 <div className="mb-16">
-                    <h2 className="text-5xl md:text-7xl mb-4">АПСЕЛЛЫ</h2>
-                    <p className="font-bold uppercase tracking-widest text-sm text-gray-500">Дополнительные инструменты для роста вашего бизнеса.</p>
+                    <h2 className="text-5xl md:text-7xl mb-4 uppercase">Дополнительные услуги</h2>
+                    <p className="font-bold uppercase tracking-widest text-sm text-gray-500">Инструменты привлечения и автоматизация бизнеса.</p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-0">
                     {upsells.map((item, index) => (
                         <motion.div
                             key={item.title}
@@ -61,8 +53,8 @@ export const Upsells = () => {
                         >
                             <div className="flex items-center justify-between mb-2">
                                 <item.icon className="w-8 h-8" />
-                                <span className="text-xs font-black uppercase bg-black text-white px-2 py-1 group-hover:bg-white group-hover:text-black transition-colors">
-                                    НОВОЕ
+                                <span className="text-[10px] font-black uppercase bg-black text-white px-2 py-1 group-hover:bg-white group-hover:text-black transition-colors rounded">
+                                    {item.category}
                                 </span>
                             </div>
                             <h3 className="text-xl font-bold uppercase tracking-tighter">{item.title}</h3>
@@ -72,6 +64,13 @@ export const Upsells = () => {
                             </div>
                         </motion.div>
                     ))}
+                </div>
+
+                <div className="mt-12 bg-gray-50 border border-gray-200 border-l-4 border-l-black p-6">
+                    <p className="font-bold text-sm uppercase mb-2">Важно:</p>
+                    <p className="text-sm font-medium text-gray-700">
+                        Если нужна полноценная настройка воронки продаж, сложная логика в CRM или разработка сценариев для чат-бота — это обсуждается отдельно, т.к. требует погружения в бизнес-процессы.
+                    </p>
                 </div>
             </div>
         </section>

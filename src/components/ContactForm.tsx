@@ -32,15 +32,11 @@ export const ContactForm = () => {
                         <div className="space-y-4">
                             <div className="flex items-center gap-4 border-b border-gray-800 pb-4">
                                 <span className="text-xs font-black text-gray-600">01</span>
-                                <span className="text-xl font-bold">hello@void.studio</span>
+                                <span className="text-xl font-bold">yakaleks96@gmail.com</span>
                             </div>
                             <div className="flex items-center gap-4 border-b border-gray-800 pb-4">
                                 <span className="text-xs font-black text-gray-600">02</span>
-                                <span className="text-xl font-bold">+7 (700) 000-00-00</span>
-                            </div>
-                            <div className="flex items-center gap-4 border-b border-gray-800 pb-4">
-                                <span className="text-xs font-black text-gray-600">03</span>
-                                <span className="text-xl font-bold">Алматы, Казахстан</span>
+                                <span className="text-xl font-bold">Екатеринбург, Россия</span>
                             </div>
                         </div>
                     </motion.div>
